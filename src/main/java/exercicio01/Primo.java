@@ -1,11 +1,10 @@
 package exercicio01;
 
 /**
- * 1.Faça um programa em Java que identifique e escreva quantos e quais os números primos:
- *  a) entre 1.000.000 e 30.000.000
- *  b) entre 90.000.000 e 120.000.000
- *  c) marque o tempo total gasto para realizar os cálculo e escreva este tempo no final
-
+ * Simple program to calculate two prime numbers.
+ * 
+ * @author Murilo
+ *
  */
 public class Primo {
 
@@ -18,6 +17,9 @@ public class Primo {
 		
 	}
 	
+	/**
+	 * First method to calculate prime, calcule primes between 1000000 and 3000000.
+	 */
 	private static void primoLetraA() {
 		int min = 1000000;
 		int max = 3000000;
@@ -32,6 +34,9 @@ public class Primo {
 		System.out.println("Quantidade de números primos:" + quantidadePrimos);
 	}
 	
+	/**
+	 * Second method to calculate prime, calcule primes between 9000000 and 1200000.
+	 */
 	private static void primoLetraB() {
 		int min = 9000000;
 		int max = 1200000;
@@ -45,6 +50,11 @@ public class Primo {
 		System.out.println("Quantidade de números primos:" + quantidadePrimos);
 	}
 
+	/**
+	 * Function auxiliar to check if current number is prime.
+	 * @param int number to check.
+	 * @return boolean if number is prime or not.
+	 */
 	private static boolean verificaPrimo(int numero) {
 	    for (int j = 2; j < numero; j++) {
 	        if (numero % j == 0)
